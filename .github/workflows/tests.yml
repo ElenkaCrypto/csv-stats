@@ -1,5 +1,8 @@
 name: tests
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -7,10 +10,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-      - name: Create 2 duplicate files and scan
+          python-version: '3.12'   # <-- було '3.x'
+      - name: Make CSV and run stats
         run: |
-          mkdir -p tmp
-          echo same > tmp/a.txt
-          echo same > tmp/b.txt
-          python dupes.py tmp
+          printf "price,qty\n10,1\n20,2\n30,3\n" > d.csv
+          python csv_stats.py d.csv price -d ","
