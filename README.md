@@ -1,4 +1,4 @@
-[![tests](https://img.shields.io/github/actions/workflow/status/ElenkaCrypto/csv-stats/tests.yml?branch=<branch>)](../../actions)
+[![tests](https://img.shields.io/github/actions/workflow/status/ElenkaCrypto/csv-stats/tests.yml?branch=main)](../../actions)
 [![license](https://img.shields.io/github/license/ElenkaCrypto/csv-stats)](LICENSE)
 
 # csv-stats
