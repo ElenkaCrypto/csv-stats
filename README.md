@@ -1,3 +1,6 @@
+[![tests](https://img.shields.io/github/actions/workflow/status/ElenkaCrypto/<repo>/tests.yml?branch=<branch>)](../../actions)
+[![license](https://img.shields.io/github/license/ElenkaCrypto/csv-stats)](LICENSE)
+
 # csv-stats
 Отримай базову статистику по колонці CSV: count, min, max, mean, median, stdev. Автовизначення розділювача, підтримка назви або індексу колонки.
 
